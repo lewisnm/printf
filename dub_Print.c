@@ -11,8 +11,8 @@ int _printf(const char *format, ...)
 {
 	int char_count;
 	all_spesh data_list[] = {
-		{"d", numbs_print}
-		{"i", numbs_print}
+		{"d", numbs_print},
+		{"i", numbs_print},
 		{NULL, NULL}
 	};
 	va_list the_list;

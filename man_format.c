@@ -7,7 +7,7 @@
  *
  * Return:the number of characters printed
  */
-int man_format(const char *format, all_spesh data_list, va_list the_list)
+int man_format(const char *format, all_spesh *data_list, va_list the_list)
 {
 	int m, l, num_sto, char_count;
 

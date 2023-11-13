@@ -34,19 +34,21 @@ int numbs_out(va_list ptrs)
 	if (x < 0)
 	{
 		gith += _putchar('-');
-		fig = x * -1;
+		fig = (unsigned int)(x * -1);
 	}
 	else
-		fig = x;
+		fig = (unsigned int)x;
 
-	for (; fig / visor > 9; )
-		div *= 10;
 
-	for (; div != 0; )
-	{
-		gith += _putchar('0' + fig / div);
-		fig %= visor;
-		visor /= 10;
-	}
-	return (gith);
+    while (fig / visor > 9) {
+        visor *= 10;
+    }
+
+    while (visor != 0) {
+        gith += _putchar('0' + fig / visor);
+        fig %= visor;
+        visor /= 10;
+    }
+
+    return gith;
 }
