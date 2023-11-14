@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 		{"b", numbs_binary},
 		{"R", flush_rot13},
 		{"r", string_rev},
+		{"o", print_hex},
 		{NULL, NULL}
 	};
 	va_list the_list;
