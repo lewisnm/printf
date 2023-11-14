@@ -7,13 +7,13 @@
 #include <stdarg.h>
 #include <limits.h>
 /**
- * struct change - defines a pointer to functions and symbols
+ * struct all_spesh - defines a structure for symbols and functions
  *
- * @attri: the attributes
- * @a: function associated
+ * @attri: The operator
+ * @a: The function associated
  */
 
-typedef struct
+typedef struct all_spesh
 {
 	char *attri;
 	int (*a)(va_list);
@@ -30,4 +30,4 @@ int char_print(va_list record);
 int prints_word(va_list records);
 int perc_print(__attribute__((unused))va_list record);
 
-#endif 
+#endif
