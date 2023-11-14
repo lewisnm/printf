@@ -3,7 +3,7 @@
 /**
  * prints_word - outputs a sring
  * @records: contains the string
- * Returns - string length
+ * Returns: string length
  */
 
 int prints_word(va_list records)
