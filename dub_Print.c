@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 {
 	int char_count;
 	all_spesh data_list[] = {
-		{"%", perc_print}, 
+		{"%", perc_print},
 		{"d", numbs_print},
 		{"i", numbs_print},
 		{"c", char_print},
