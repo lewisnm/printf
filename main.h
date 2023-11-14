@@ -37,6 +37,9 @@ char *_memcpy(char *end, char *root, unsigned int p);
 void set_root(char *gti);
 int flush_rot13(va_list record);
 int string_rev(va_list record);
-
+int print_hexes(va_list hxlist);
+int print_hx(va_list hxlist);
+int print_hexhex(unsigned long int hex);
+int hx_chk(int hx, char h);
 
 #endif

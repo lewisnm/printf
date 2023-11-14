@@ -20,6 +20,8 @@ int _printf(const char *format, ...)
 		{"R", flush_rot13},
 		{"r", string_rev},
 		{"o", print_hex},
+		{"x", print_hx},
+		{"X", print_hexes},
 		{NULL, NULL}
 	};
 	va_list the_list;
