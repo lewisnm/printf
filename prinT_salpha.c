@@ -16,5 +16,5 @@ int prints_word(va_list records)
 		gta = "(null)";
 	for (d = 0; gta[d] != '\0'; d++)
 		_putchar(gta[d]);
-	return(d);
+	return (d);
 }
