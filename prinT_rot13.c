@@ -9,7 +9,7 @@
 int flush_rot13(va_list record)
 {
 	int u, v, w = 0, entire = 0;
-	char g = va_arg(record, char *);
+	char *g = va_arg(record, char *);
 	char m[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char n[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
