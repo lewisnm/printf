@@ -26,5 +26,8 @@ int numbs_out(va_list ptrs);
 int numbs_print(va_list record);
 int _putchar(char b);
 int _puts(char *location);
+int char_print(va_list record);
+int prints_word(va_list records);
+int perc_print(__attribute__((unused))va_list record);
 
 #endif 
