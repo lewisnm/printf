@@ -39,16 +39,16 @@ int numbs_out(va_list ptrs)
 	else
 		fig = (unsigned int)x;
 
+	while (fig / visor > 9)
+	{
+		visor *= 10;
+	}
 
-    while (fig / visor > 9) {
-        visor *= 10;
-    }
-
-    while (visor != 0) {
-        gith += _putchar('0' + fig / visor);
-        fig %= visor;
-        visor /= 10;
-    }
-
-    return gith;
+	while (visor != 0)
+	{
+		gith += _putchar('0' + fig / visor);
+		fig %= visor;
+		visor /= 10;
+	}
+	return (gith);
 }
