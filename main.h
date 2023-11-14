@@ -35,5 +35,6 @@ unsigned int base_size(unsigned int fig, int foot);
 char *_memcpy(char *end, char *root, unsigned int p);
 void set_root(char *gti);
 int flush_rot13(va_list record);
+int string_rev(va_list record);
 
 #endif
