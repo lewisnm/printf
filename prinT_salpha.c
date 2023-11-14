@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * prints_word - outputs a sring
- * @records: contains the string
- * Returns: string length
+ * prints_word - Prints a string
+ * @records: list of arguments
+ * Return: Will return the amount of characters printed.
  */
 
 int prints_word(va_list records)
