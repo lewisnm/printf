@@ -17,6 +17,7 @@ int _printf(const char *format, ...)
 		{"c", char_print},
 		{"s", prints_word},
 		{"b", numbs_binary},
+		{"R", flush_rot13}, 
 		{NULL, NULL}
 	};
 	va_list the_list;

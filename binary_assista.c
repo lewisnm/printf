@@ -78,8 +78,6 @@ void set_root(char *gti)
 	int h;
 
 	for (h = 0; gti[h] != '\0'; h++)
-	{
 		_putchar(gti[h]);
-	}
 	_putchar('\n');
 }
