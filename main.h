@@ -41,5 +41,7 @@ int print_hexes(va_list hxlist);
 int print_hx(va_list hxlist);
 int print_hexhex(unsigned long int hex);
 int hx_chk(int hx, char h);
+int print_unint(va_list hxlist);
+int print_unnum(unsigned int x);
 
 #endif
