@@ -16,6 +16,7 @@ int _printf(const char *format, ...)
 		{"i", numbs_print},
 		{"c", char_print},
 		{"s", prints_word},
+		{"b", numbs_binary},
 		{NULL, NULL}
 	};
 	va_list the_list;
