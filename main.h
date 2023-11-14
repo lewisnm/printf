@@ -22,6 +22,7 @@ typedef struct
 
 int _printf(const char *format, ...);
 int man_format(const char *format, all_spesh *data_list, va_list the_list);
+int numbs_out(va_list ptrs);
 int numbs_print(va_list record);
 int _putchar(char b);
 int _puts(char *location);

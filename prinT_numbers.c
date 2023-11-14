@@ -10,7 +10,7 @@ int numbs_print(va_list record)
 {
 	int int_length;
 
-	int_length = numbs_print(record);
+	int_length = numbs_out(record);
 	return (int_length);
 }
 
