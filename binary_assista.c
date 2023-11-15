@@ -79,4 +79,27 @@ void set_root(char *gti)
 
 	for (h = 0; gti[h] != '\0'; h++)
 		_putchar(gti[h]);
+<<<<<<< HEAD
+=======
+}
+
+/**
+ * hx_chk - Specifies hex function
+ * @hx: Integer to be converted to letter
+ * @h: Specifies hex function being utilized
+ * Return: The value of the letter in ASCII
+ */
+
+int hx_chk(int hx, char h)
+{
+	char *ho = "abcdef";
+	char *Hx = "ABCDEF";
+
+	hx = hx - 10;
+	if (h == 'h')
+		return (ho[hx]);
+	else
+		return (Hx[hx]);
+	return (0);
+>>>>>>> 0f3a82550a6594fda27a25bdba81c2d100579de7
 }
