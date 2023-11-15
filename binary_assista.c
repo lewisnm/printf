@@ -79,8 +79,6 @@ void set_root(char *gti)
 
 	for (h = 0; gti[h] != '\0'; h++)
 		_putchar(gti[h]);
-<<<<<<< HEAD
-=======
 }
 
 /**
@@ -101,5 +99,4 @@ int hx_chk(int hx, char h)
 	else
 		return (Hx[hx]);
 	return (0);
->>>>>>> 0f3a82550a6594fda27a25bdba81c2d100579de7
 }
