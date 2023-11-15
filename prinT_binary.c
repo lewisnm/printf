@@ -18,8 +18,7 @@ int numbs_binary(va_list record)
 		return (_putchar('0'));
 	if (fig < 1)
 		return (-1);
-	size = 0;
-	size = base_size(size, 2);
+	size = 64;
 	gta = malloc(sizeof(char) * size + 1);
 	if (gta == NULL)
 		return (-1);
