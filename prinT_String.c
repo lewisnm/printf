@@ -37,7 +37,7 @@ int output_string(va_list k)
  * Return: true or false
  */
 
-int isNonAlpha(char g) 
+int isNonAlpha(char g)
 {
 	return ((g > 0 && g < 32) || g >= 127);
 }
