@@ -94,7 +94,7 @@ int hx_chk(int hx, char h)
 	char *Hx = "ABCDEF";
 
 	hx = hx - 10;
-	if (h == 'h')
+	if (h == 'x')
 		return (ho[hx]);
 	else
 		return (Hx[hx]);
