@@ -9,7 +9,7 @@
 int output_string(va_list k)
 {
 	register short fig = 0;
-	char *pes, *x = va_arg(l, char *);
+	char *pes, *x = va_arg(k, char *);
 	int counter;
 
 	if (!x)
@@ -44,13 +44,13 @@ int isNonAlpha(char g)
 
 /**
  * convert - converts number and base into string
- * @num: input number
- * @base: input base
- * @lowercase: flag if hexa values need to be lowercase
+ * @digit: input number
+ * @root: input base
+ * @smalletters: flag if hexa values need to be lowercase
  * Return: result string
  */
 
-char *convert(unsigned long int digit, int root, int smallettrs)
+char *convert(unsigned long int digit, int root, int smalletters)
 {
 	static char *iter;
 	static char buffer[50];
@@ -62,7 +62,7 @@ char *convert(unsigned long int digit, int root, int smallettrs)
 	str = &buffer[49];
 	*str = NUL;
 	do {
-		*--str = iter[num % base];
+		*--str = iter[digit % root];
 		digit /= root;
 	} while (digit);
 

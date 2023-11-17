@@ -7,7 +7,7 @@
 #include <stdarg.h>
 #include <limits.h>
 
-#define NULL_STRING "(null)"
+#define NULL_STRAND "(null)"
 #define NUL '\0'
 
 /**
@@ -48,4 +48,7 @@ int hx_chk(int hx, char h);
 int print_unint(va_list hxlist);
 int print_unnum(unsigned int x);
 int output_string(va_list k);
+int isNonAlpha(char g);
+char *convert(unsigned long int digit, int root, int smalletters);
+
 #endif
