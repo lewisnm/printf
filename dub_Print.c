@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		{"x", print_hx},
 		{"X", print_hexes},
 		{"u", print_unint},
+		{"S", output_string},
 		{NULL, NULL}
 	};
 	va_list the_list;

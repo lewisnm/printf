@@ -6,6 +6,10 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
+
+#define NULL_STRING "(null)"
+#define NUL '\0'
+
 /**
  * struct all_spesh - defines a structure for symbols and functions
  *
@@ -43,5 +47,5 @@ int print_hexhex(unsigned long int hex);
 int hx_chk(int hx, char h);
 int print_unint(va_list hxlist);
 int print_unnum(unsigned int x);
-
+int output_string(va_list k);
 #endif
