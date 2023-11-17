@@ -29,7 +29,7 @@ int print_hexes(va_list hxlist)
 		rem_hex = hex % 16;
 		if (rem_hex > 9)
 		{
-			rem_hex = hx_chk(rem_hex, 'x');
+			rem_hex = hx_chk(rem_hex, 'X');
 			hx_rp[ln] = rem_hex;
 		}
 		else
